@@ -20,6 +20,7 @@ struct RegisterView: View {
                     .onChange(of: name) { value in checkTF(value) }
                 Text("\(name.count)")
                     .foregroundColor(buttonIsActive ? .green : .red)
+                Spacer()
             }.padding(.horizontal)
             Button(action: registerUser) {
                 Image(systemName: "checkmark.circle")
