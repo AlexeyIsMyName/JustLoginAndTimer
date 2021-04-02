@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct JustLoginAndTimerApp: App {
+    @AppStorage("userName") var userName: String = ""
+    @AppStorage("isRegistered") var isRegistered: Bool = false
+    
+//    @StateObject private var user = UserManager(isRegistered: isRegistered,
+//                                                name: userName)
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StarterView()
+                .environmentObject(UserManager(isRegistered: isRegistered, name: userName))
         }
     }
 }

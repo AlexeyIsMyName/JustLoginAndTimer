@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		E7037EF02617BC0A007FC473 /* JustLoginAndTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7037EEF2617BC0A007FC473 /* JustLoginAndTimerApp.swift */; };
-		E7037EF22617BC0A007FC473 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7037EF12617BC0A007FC473 /* ContentView.swift */; };
 		E7037EF42617BC0B007FC473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7037EF32617BC0B007FC473 /* Assets.xcassets */; };
 		E7037EF72617BC0B007FC473 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7037EF62617BC0B007FC473 /* Preview Assets.xcassets */; };
+		E7037F002617BD43007FC473 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7037EFF2617BD43007FC473 /* RegisterView.swift */; };
+		E7037F032617BDAC007FC473 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7037F022617BDAC007FC473 /* UserManager.swift */; };
+		E7037F062617BE0C007FC473 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7037F052617BE0C007FC473 /* StarterView.swift */; };
+		E7037F092617C029007FC473 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7037F082617C029007FC473 /* TimerView.swift */; };
+		E7037F132617C084007FC473 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7037F122617C084007FC473 /* TimeCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E7037EEC2617BC0A007FC473 /* JustLoginAndTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustLoginAndTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7037EEF2617BC0A007FC473 /* JustLoginAndTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustLoginAndTimerApp.swift; sourceTree = "<group>"; };
-		E7037EF12617BC0A007FC473 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E7037EF32617BC0B007FC473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7037EF62617BC0B007FC473 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E7037EF82617BC0B007FC473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7037EFF2617BD43007FC473 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		E7037F022617BDAC007FC473 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		E7037F052617BE0C007FC473 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		E7037F082617C029007FC473 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		E7037F122617C084007FC473 /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				E7037EEF2617BC0A007FC473 /* JustLoginAndTimerApp.swift */,
-				E7037EF12617BC0A007FC473 /* ContentView.swift */,
+				E7037F052617BE0C007FC473 /* StarterView.swift */,
+				E7037EFF2617BD43007FC473 /* RegisterView.swift */,
+				E7037F082617C029007FC473 /* TimerView.swift */,
+				E7037F022617BDAC007FC473 /* UserManager.swift */,
+				E7037F122617C084007FC473 /* TimeCounter.swift */,
 				E7037EF32617BC0B007FC473 /* Assets.xcassets */,
 				E7037EF82617BC0B007FC473 /* Info.plist */,
 				E7037EF52617BC0B007FC473 /* Preview Content */,
@@ -138,7 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7037EF22617BC0A007FC473 /* ContentView.swift in Sources */,
+				E7037F092617C029007FC473 /* TimerView.swift in Sources */,
+				E7037F002617BD43007FC473 /* RegisterView.swift in Sources */,
+				E7037F062617BE0C007FC473 /* StarterView.swift in Sources */,
+				E7037F132617C084007FC473 /* TimeCounter.swift in Sources */,
+				E7037F032617BDAC007FC473 /* UserManager.swift in Sources */,
 				E7037EF02617BC0A007FC473 /* JustLoginAndTimerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
