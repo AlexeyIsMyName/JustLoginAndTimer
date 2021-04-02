@@ -15,15 +15,17 @@ struct TimerView: View {
         VStack {
             Text("Hi, \(user.name)!")
                 .font(.title)
-                .offset(x: 0, y: 100)
+                .offset(x: 0, y: 50)
             Text("\(timer.counter)")
                 .font(.largeTitle)
-                .offset(x: 0, y: 200)
+                .offset(x: 0, y: 120)
             Spacer()
             ButtonView()
                 .environmentObject(timer)
             Spacer()
-        }
+            ButtonLogOut()
+                .environmentObject(user)
+        }.padding()
     }
 }
 
@@ -51,5 +53,31 @@ struct ButtonView: View {
             RoundedRectangle(cornerRadius: 20)
                 .stroke(Color.black, lineWidth: 4)
         )
+    }
+}
+
+struct ButtonLogOut: View {
+    @EnvironmentObject var user: UserManager
+    
+    var body: some View {
+        Button(action: logOut) {
+            Text("Log Out")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+        }
+        .frame(width: 200, height: 60)
+        .background(Color.blue)
+        .cornerRadius(20)
+        .overlay(
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(Color.black, lineWidth: 4)
+        )
+    }
+    
+    private func logOut() {
+        StorageManager.shared.deleteUser()
+        user.isRegistered = false
+        user.name = ""
     }
 }
