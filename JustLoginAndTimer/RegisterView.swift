@@ -40,6 +40,9 @@ struct RegisterView: View {
         if !name.isEmpty {
             user.name = name
             user.isRegistered.toggle()
+            
+            StorageManager.shared.saveUser(isRegistered: true,
+                                           name: name)
         }
     }
 }
