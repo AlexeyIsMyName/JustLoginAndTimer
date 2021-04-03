@@ -15,4 +15,9 @@ class UserManager: ObservableObject {
         self.isRegistered = couple.isRegistered
         self.name = couple.name
     }
+    
+    init(isRegistered: Bool, name: String) {
+        self.isRegistered = isRegistered
+        self.name = name
+    }
 }
