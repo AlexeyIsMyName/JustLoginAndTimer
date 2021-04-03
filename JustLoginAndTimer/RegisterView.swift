@@ -10,7 +10,7 @@ import SwiftUI
 struct RegisterView: View {
     @EnvironmentObject var user: UserManager
     @State private var name = ""
-    @State private var buttonIsActive = false
+    @State private var isButtonActive = false
     
     var body: some View {
         VStack {
@@ -19,21 +19,22 @@ struct RegisterView: View {
                     .multilineTextAlignment(.center)
                     .onChange(of: name) { value in checkTF(value) }
                 Text("\(name.count)")
-                    .foregroundColor(buttonIsActive ? .green : .red)
+                    .foregroundColor(isButtonActive ? .green : .red)
                 Spacer()
             }.padding(.horizontal)
+            
             Button(action: registerUser) {
                 Image(systemName: "checkmark.circle")
                 Text("Ok")
-            }.disabled(!buttonIsActive)
+            }.disabled(!isButtonActive)
         }
     }
     
     private func checkTF(_ value: String) {
         if value.count >= 3 {
-            buttonIsActive = true
+            isButtonActive = true
         } else {
-            buttonIsActive = false
+            isButtonActive = false
         }
     }
     

@@ -9,10 +9,7 @@ import SwiftUI
 
 @main
 struct JustLoginAndTimerApp: App {
-    @StateObject private var user = UserManager(
-        isRegistered: StorageManager.shared.fetchUser().isRegistered ?? false,
-        name: StorageManager.shared.fetchUser().name ?? ""
-    )
+    @StateObject private var user = UserManager(StorageManager.shared.fetchUser())
     
     /* не получилось ((
     @AppStorage("userName") var userName: String = ""

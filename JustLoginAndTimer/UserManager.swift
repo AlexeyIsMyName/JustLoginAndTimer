@@ -11,8 +11,8 @@ class UserManager: ObservableObject {
     @Published var isRegistered: Bool
     var name: String
     
-    init(isRegistered: Bool, name: String) {
-        self.isRegistered = isRegistered
-        self.name = name
+    init(_ couple: (isRegistered: Bool, name: String)) {
+        self.isRegistered = couple.isRegistered
+        self.name = couple.name
     }
 }
